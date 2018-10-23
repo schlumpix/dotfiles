@@ -14,7 +14,7 @@ URxvt.inheritPixmap: true
 #URxvt.color4: Blue
 
 #Rofi settings
-rofi.lines: 5
+rofi.lines: 8
 #rofi.width: 100 #rofi-fullsize
 rofi.width: 30
 #rofi.padding: 800 #rofi-follsize
@@ -29,7 +29,7 @@ rofi.color-active: argb:00262a35,  #05b8ce,  argb:00262a35,  argb:00262a35,  #fd
 #                  'background',      'border', 'separator'
 rofi.color-window:  argb:d9262a35,    #262a35,  #262a35
 
-rofi.font: System  San Francisco Display 18
+rofi.font: System  San Francisco Display 15
 rofi.hide-scrollbar: true
 rofi.eh: 1 #line height
 
