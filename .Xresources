@@ -1,0 +1,85 @@
+!Cursor
+Xcursor.theme: Breeze-Obsidian
+Xcursor.size: 10
+
+!rxvt-unicode settings
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.inheritPixmap: true
+URxvt.transparent: true
+URxvt.tintColor: #262a35
+URxvt.shading: 105
+
+!transparency (only to blacki, no full transparency possible)
+!Urxvt.depth: 32
+!URxvt.background: rgba:2600/2A00/3500/cccc
+!
+!URxvt.background: #262a35
+!URxvt.foreground: [80]#d5dad6
+
+URxvt.secondaryScroll: true
+URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=12
+URxvt.geometry: 79x23
+
+!Rofi settings
+rofi.lines: 18
+!rofi fullsize
+!rofi.width: 100
+!rofi.padding: 800
+
+!rofi 'windowed size' 
+rofi.width: 20
+rofi.padding: 10
+rofi.bw: 0
+
+! State:           'bg',           'fg',     'bgalt',        'hlbg',         'hlfg'
+rofi.color-normal: argb:00262a35,  #eee8d5,  argb:00262a35,  argb:00262a35,  #05b8ce
+rofi.color-urgent: argb:00262a35,  #05b8ce,  argb:00262a35,  argb:00262a35,  #fdf6e3
+rofi.color-active: argb:00262a35,  #05b8ce,  argb:00262a35,  argb:00262a35,  #fdf6e3
+
+!                  'background',      'border', 'separator'
+rofi.color-window:  argb:d9262a35,    #262a35,  #262a35
+
+rofi.font: System  San Francisco Display 11
+rofi.hide-scrollbar: true
+!rofi line height
+rofi.eh: 1
+
+!Coloring
+! special
+*.foreground:  [80]#d5dad6
+!*.background:   #101112
+*.background:   #262a35
+*.cursorColor:  #d5dad6
+
+! black
+*.color0:       #282a2e
+*.color8:       #40007e
+
+! red
+*.color1:       #00aa83
+*.color9:       #00aa83
+
+! green
+*.color2:       #992020
+*.color10:      #992020
+
+! yellow
+*.color3:       #39097a
+*.color11:      #00621d
+
+! blue
+*.color4:       #00383f
+*.color12:      #05b8ce
+
+! magenta
+*.color5:       #002366
+*.color13:      #833600
+
+! cyan
+*.color6:       #006472
+*.color14:      #009bb1
+
+! white
+*.color7:       #636262
+*.color15:      #82bdb4
