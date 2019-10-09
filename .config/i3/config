@@ -242,7 +242,7 @@ for_window [class="feh"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Viewnior"] floating enable
 for_window [class="Pcmanfm"] floating enable
-#for_window [class="mpv"] floating enable
+for_window [class="mpv"] floating enable
 
 #autostart applications
 #sound
