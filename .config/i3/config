@@ -227,7 +227,9 @@ bar {
     }
 }
 #lock screen
-bindsym $mod+Shift+x exec i3lock -c 262a35 
+#bindsym $mod+Shift+x exec i3lock -c 262a35 
+#run betterlockscreen -u ~/wallpaper/wallpaper.jpg to update lockscreen picture
+bindsym $mod+Shift+x exec --no-startup-id betterlockscreen -l dimblur 
 
 #disable titlebars
 new_window pixel 1
@@ -251,5 +253,5 @@ exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id gxkb
-exec --no-startup-id picom -b
+exec --no-startup-id picom -b 
 exec --no-startup-id dunst
