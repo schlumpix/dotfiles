@@ -235,7 +235,7 @@ bindsym $mod+Shift+x exec --no-startup-id betterlockscreen -l dimblur
 new_window pixel 1
 
 #take screenshot
-bindsym --release Print exec scrot -s ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+bindsym --release Print exec scrot -s ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot taken"
 
 # windows starting in floating mode
 for_window [class="Lxappearance"] floating enable border normal
