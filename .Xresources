@@ -21,30 +21,6 @@ URxvt.secondaryScroll: true
 URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=12
 URxvt.geometry: 79x23
 
-!Rofi settings
-rofi.lines: 18
-!rofi fullsize
-!rofi.width: 100
-!rofi.padding: 800
-
-!rofi 'windowed size' 
-rofi.width: 20
-rofi.padding: 10
-rofi.bw: 0
-
-! State:           'bg',           'fg',     'bgalt',        'hlbg',         'hlfg'
-rofi.color-normal: argb:00262a35,  #eee8d5,  argb:00262a35,  argb:00262a35,  #05b8ce
-rofi.color-urgent: argb:00262a35,  #05b8ce,  argb:00262a35,  argb:00262a35,  #fdf6e3
-rofi.color-active: argb:00262a35,  #05b8ce,  argb:00262a35,  argb:00262a35,  #fdf6e3
-
-!                  'background',      'border', 'separator'
-rofi.color-window:  argb:d9262a35,    #262a35,  #262a35
-
-rofi.font: System  San Francisco Display 11
-rofi.hide-scrollbar: true
-!rofi line height
-rofi.eh: 1
-
 !Coloring
 ! special
 *.foreground:  [80]#d5dad6
