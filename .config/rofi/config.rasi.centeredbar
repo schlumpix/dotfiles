@@ -5,8 +5,6 @@ configuration {
     display-window: "window";
     show-icons: false;
     font: "System San Francisco Display 10";
-    location: 1;
-    yoffset: 23;
 }
 
 * {
@@ -39,17 +37,16 @@ configuration {
     selected-active-background:  @blue;
     active-background:           @orange;
     background-color:            rgba ( 0, 0, 0, 0 % );
+    lines: 9;
     border: 0px;
-    lines: 15;
 }
 
 #window {
-    width: 300;
-    height: 100%;
+    width: 100%;
     text-color: @foreground;
-    orientation: vertical;
+    orientation: horizontal;
     border: 0px;
-    children: [mainbox, dummy];
+    children: [dummy, mainbox, dummy];
     background-color:            argb:d9202020;
 }
 
@@ -65,7 +62,6 @@ configuration {
     padding: 5px;
     margin: 0px;
     border: 0px;
-    expand: false;
 }
 
 #message {
