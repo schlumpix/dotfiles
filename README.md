@@ -13,8 +13,8 @@ You are better off reading the individual dot files and copy the bits that inter
 - Front Aweseome cheat sheet: https://fontawesome.com/cheatsheet?from=io  
 
 ### Themes:  
-- Arc GTK theme: https://github.com/horst3180/Arc-theme  
-- Wallpaper: https://www.artstation.com/artwork/laYWG  
+- Windows 10 Dark ThemeL https://github.com/B00merang-Project/Windows-10-Dark
+- Wallpaper: https://i.imgur.com/E9YRV2B.jpg  
 
 ### Documentation:  
 - i3wm documentation: https://i3wm.org/
