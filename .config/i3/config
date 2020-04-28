@@ -140,6 +140,8 @@ assign [class="Code"] $workspace3
 assign [class="FreeCAD"] $workspace9
 assign [class="JDownloader"] $workspace6
 assign [class="Wine"] $workspace6
+assign [class="battle.net.exe"] $workspace6
+assign [class="game.exe"] $workspace6
 assign [class="Steam"] $workspace6
 assign [class="^CrossCode$" instance="^nwjs_lmepkikdgdbfdpjokdmnnanopegnpjda$"] $workspace6
 assign [class="Gimp"] $workspace3
@@ -267,6 +269,6 @@ exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id gxkb
-exec --no-startup-id picom -b 
+exec --no-startup-id picom -b --config ~/.picom.conf
 exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
