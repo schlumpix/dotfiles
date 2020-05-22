@@ -48,7 +48,8 @@ URxvt.geometry: 88x28
 *.color10:      #992020
 
 ! yellow
-*.color3:       #39097a
+!*.color3:       #39097a
+*.color3:       #6613d6
 *.color11:      #00621d
 
 ! blue
@@ -56,7 +57,8 @@ URxvt.geometry: 88x28
 *.color12:      #05b8ce
 
 ! magenta
-*.color5:       #002366
+!*.color5:       #002366
+*.color5:       #274e9b
 *.color13:      #833600
 
 ! cyan
