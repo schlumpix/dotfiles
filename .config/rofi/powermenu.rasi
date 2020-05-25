@@ -1,0 +1,139 @@
+configuration {
+    theme: "powermenu";
+    sidebar-mode: true;
+    modi: "run";
+    show-icons: false;
+    font: "System San Francisco Display 12";
+    location: 0;
+}
+
+* {
+    text-color:                  #eee8d5;
+    background-color:            argb:d9202020;
+    lightbg:                     argb:d9202020;
+    red:                         #f15d22;
+    orange:                      #faa41a; 
+    blue:                        #48b9c7; 
+
+    selected-normal-foreground:  #05b8ce;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @background-color;
+    selected-urgent-foreground:  @foreground;
+    urgent-foreground:           @foreground;
+    alternate-urgent-background: @background-color;
+    active-foreground:           @foreground;
+    selected-active-foreground:  @foreground;
+    alternate-normal-foreground: @foreground;
+    alternate-active-background: @blue;
+    bordercolor:                 @foreground;
+    normal-background:           @background-color;
+    selected-normal-background:  @background-color;
+    separatorcolor:              @orange;
+   
+    urgent-background:           @red;
+    alternate-urgent-foreground: @foreground;
+    selected-urgent-background:  @red;
+    alternate-active-foreground: @foreground;
+    selected-active-background:  @blue;
+    active-background:           @orange;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    border: 0px;
+    lines: 15;
+}
+
+#window {
+    width: 200;
+    height: 120;
+    text-color: @foreground;
+    orientation: vertical;
+    border: 0px;
+    children: [mainbox];
+    background-color:            argb:d9202020;
+}
+
+#dummy {
+    expand: true;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#mainbox {
+    width: 200px;
+    padding: 5px;
+    margin: 0px;
+    border: 0px;
+    expand: false;
+}
+
+#message {
+    border: 0px;
+}
+
+#textbox {
+    text-color: @foreground;
+}
+
+#listview {
+}
+
+#element {
+    border: 0;
+}
+#element.normal.normal {
+    text-color: @normal-foreground;
+}
+#element.normal.urgent {
+    text-color: @urgent-foreground;
+}
+
+#element.normal.active {
+    text-color: @active-foreground;
+}
+#element.selected.normal {
+    text-color: @selected-normal-foreground;
+}
+
+#element.selected.urgent {
+    text-color: @selected-urgent-foreground;
+}
+
+#element.selected.active {
+    text-color: @selected-active-foreground;
+}
+
+#element.alternate.normal {
+    text-color: @alternate-normal-foreground;
+}
+
+#element.alternate.urgent {
+    text-color: @alternate-urgent-foreground;
+}
+
+#element.alternate.active {
+    text-color: @alternate-active-foreground;
+}
+
+#sidebar {
+}
+
+#button selected {
+    text-color: @selected-normal-foreground;
+}
+#inputbar {
+    text-color: @selected-normal-foreground;
+}
+
+#button normal {
+    text-color: @foreground;
+}
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator];
+}
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    text-color: @normal-foreground;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+}
