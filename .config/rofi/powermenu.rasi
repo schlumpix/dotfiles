@@ -3,7 +3,7 @@ configuration {
     sidebar-mode: true;
     modi: "run";
     show-icons: false;
-    font: "System San Francisco Display 12";
+    font: "System San Francisco Display 12, Font Awesome 5 Free Regular 12, Font Awesome 5 Free Solid 12";
     location: 0;
 }
 
@@ -38,12 +38,11 @@ configuration {
     active-background:           @orange;
     background-color:            rgba ( 0, 0, 0, 0 % );
     border: 0px;
-    lines: 15;
 }
 
 #window {
     width: 200;
-    height: 120;
+    height: 95;
     text-color: @foreground;
     orientation: vertical;
     border: 0px;
@@ -129,7 +128,7 @@ configuration {
 }
 
 #inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator];
+    children:   [];
 }
 #textbox-prompt-colon {
     expand:     false;

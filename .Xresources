@@ -20,10 +20,8 @@ URxvt.background: #202020
 URxvt.foreground: #d5dad6
 
 URxvt.secondaryScroll: true
-!URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=12
-!URxvt.font:xft:Noto Sans Mono Medium:pixelsize=12:hinting=true
-!URxvt.font: xft:Source Code Pro Medium:pixelsize=13:hinting=true
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=12:hinting=true
+URxvt.font: xft:Source Code Pro:size=10:hinting=true:antialias:true, xft:Sauce Code Pro Nerd Font Mono:size10
+!URxvt.font: xft:DejaVu Sans Mono:pixelsize=12:hinting=true
 URxvt.geometry: 88x28
 
 !Coloring

@@ -16,7 +16,21 @@ lock_command="betterlockscreen -l dimblur"
 rofi_command="rofi -theme powermenu"
 
 #options=$'logout\nreboot\npoweroff\nhibernate\nsuspend' 
-options=$'lock\nlogout\nreboot\npoweroff' 
+options=" lock
+ logout
+ reboot
+ poweroff" 
 
 # ... because the essential options (-dmenu and -p) are added here
-eval \$"$(echo "$options" | $rofi_command -dmenu -p "")_command"
+selection=$(echo "$options" | $rofi_command -dmenu -p "")
+
+case "${selection}" in
+    " lock")
+    $lock_command;;
+    " logout")
+    $logout_command;;
+    " reboot")
+    $reboot_command;;
+    " poweroff")
+    $poweroff_command;;
+esac
