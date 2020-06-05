@@ -14,7 +14,7 @@ You are better off reading the individual dot files and copy the bits that inter
 
 ### Themes:  
 - Windows 10 Dark ThemeL https://github.com/B00merang-Project/Windows-10-Dark
-- Wallpaper: hhttps://wallhaven.cc/w/96w8e8  
+- Wallpaper: https://wallhaven.cc/w/96w8e8  
 
 ### Documentation:  
 - i3wm documentation: https://i3wm.org/
