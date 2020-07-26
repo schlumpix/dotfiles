@@ -1,4 +1,6 @@
 set statusbar-h-padding 0
 set statusbar-v-padding 0
+set statusbar-bg "#595959"
+set statusbar-fg "#eeeeee"
 set page-padding 2
-
+set adjust-open "best-fit"

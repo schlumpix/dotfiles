@@ -8,14 +8,14 @@ configuration {
 }
 
 * {
-    text-color:                  #eee8d5;
-    background-color:            argb:d9202020;
-    lightbg:                     argb:d9202020;
+    text-color:                  #939393;
+    background-color:            argb:d9eeeeee;
+    lightbg:                     argb:d9eeeeee;
     red:                         #f15d22;
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #05b8ce;
+    selected-normal-foreground:  #595959;
     normal-foreground:           @foreground;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;
@@ -47,7 +47,7 @@ configuration {
     orientation: vertical;
     border: 0px;
     children: [mainbox];
-    background-color:            argb:d9202020;
+    background-color:            argb:d9eeeeee;
 }
 
 #dummy {

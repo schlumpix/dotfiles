@@ -201,16 +201,11 @@ gaps outer 10
 #smart gaps
 #smart_gaps on
 
-#set $bg-color 	          #2f343f
-#set $bg-color            #009BB1
-#set $bg-color            #262a35
-set $bg-color            #202020
-#set $inactive-bg-color   #2f343f
-#set $inactive-bg-color   #262a35
-set $inactive-bg-color   #202020
-set $text-color          #05b8ce
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+set $bg-color            #eeeeee
+set $inactive-bg-color   #e5e5e5
+set $text-color          #595959
+set $inactive-text-color #939393
+set $urgent-bg-color     #e53935
 set $urgent-text-color   #e53935
 set $transparent         #262a3500
 
@@ -233,12 +228,12 @@ bar {
 #        status_command i3status
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
-		background $inactive-bg-color
+		background $bg-color
 	   	separator #757575
 		#                  border             background         text
-		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $inactive-bg-color $inactive-bg-color $urgent-text-color
+		focused_workspace  $bg-color $bg-color $text-color
+		inactive_workspace $bg-color $bg-color $inactive-text-color
+		urgent_workspace   $bg-color $bg-color $urgent-text-color
     }
 }
 #lock screen
