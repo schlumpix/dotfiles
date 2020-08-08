@@ -13,5 +13,6 @@ alias cp='cp -v'
 alias rm='rm -I'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias tty-clock='tty-clock -c -C 6 -b'
 
 PS1='\u@\h \$ '

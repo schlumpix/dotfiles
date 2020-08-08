@@ -23,9 +23,6 @@ font pango:System San Francisco Display, Font Awesome 5 Free Regular, Font Aweso
 # Wallpaper
 exec_always --no-startup-id feh --no-fehbg --bg-scale ~/wallpaper/wallpaper.jpg
 
-# Keyboard layout (allow switching using left alt + left shift)
-exec --no-startup-id "setxkbmap -layout us,de -variant altgr-intl,nodeadkeys -option nodeadkeys, -option 'grp:alt_shift_toggle'"
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -196,14 +193,14 @@ bindsym $mod+r mode "resize"
 
 #gaps
 gaps inner 10
-gaps outer 10
+gaps outer 15
 
 #smart gaps
 #smart_gaps on
 
 set $bg-color            #eeeeee
 set $inactive-bg-color   #e5e5e5
-set $text-color          #595959
+set $text-color          #202020
 set $inactive-text-color #939393
 set $urgent-bg-color     #e53935
 set $urgent-text-color   #e53935
@@ -265,9 +262,14 @@ for_window [class="discord"] floating enable
 #sound
 exec --no-startup-id pulseaudio
 #applications
-exec --no-startup-id pa-applet
-exec --no-startup-id nm-applet
-exec --no-startup-id gxkb
+exec_always --no-startup-id pa-applet
+exec_always --no-startup-id nm-applet
+#exec_always --no-startup-id gxkb
 exec --no-startup-id picom -b --config ~/.picom.conf
-exec --no-startup-id dunst
-exec --no-startup-id blueman-applet
+exec_always --no-startup-id dunst
+exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id xfce4-power-manager
+
+# Keyboard layout (allow switching using left alt + left shift)
+#exec --no-startup-id "setxkbmap -layout us,de -variant altgr-intl,nodeadkeys -option nodeadkeys, -option 'grp:alt_shift_toggle'"
+exec_always --no-startup-id "setxkbmap -layout us,ch -variant altgr-intl, -option nodeadkeys, -option 'grp:alt_shift_toggle'"
