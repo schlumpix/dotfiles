@@ -9,14 +9,14 @@ configuration {
 }
 
 * {
-    text-color:                  #595959;
+    text-color:                  #202020;
     background-color:            argb:d9eeeeee;
     lightbg:                     argb:d9eeeeee;
     red:                         #f15d22;
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #595959;
+    selected-normal-foreground:  #202020;
     normal-foreground:           #939393;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;

@@ -15,7 +15,7 @@ configuration {
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #595959;
+    selected-normal-foreground:  #202020;
     normal-foreground:           @foreground;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;

@@ -17,7 +17,7 @@ URxvt.transparent: false
 !
 !URxvt.background: #262a35
 URxvt.background: #e5e5e5
-URxvt.foreground: #595959
+URxvt.foreground: #202020
 
 URxvt.secondaryScroll: true
 URxvt.font: xft:Source Code Pro:size=11:hinting=true:antialias:true, xft:Sauce Code Pro Nerd Font Mono:size11
@@ -31,7 +31,7 @@ URxvt.geometry: 88x28
 !*.background:   #101112
 !*.background:   #262a35
 *.background: #202020
-*.cursorColor: #d5dad6
+*.cursorColor: #05b8ce
 
 ! black
 *.color0:       #282a2e
