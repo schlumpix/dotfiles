@@ -13,7 +13,7 @@ You are better off reading the individual dot files and copy the bits that inter
 - Front Aweseome cheat sheet: https://fontawesome.com/cheatsheet?from=io  
 
 ### Themes:  
-- Windows 10 Dark ThemeL https://github.com/B00merang-Project/Windows-10-Dark
+- Windows 10 Theme https://github.com/B00merang-Project/Windows-10
 - Wallpaper: https://wallhaven.cc/w/96w8e8  
 
 ### Documentation:  
