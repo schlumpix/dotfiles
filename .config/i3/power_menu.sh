@@ -19,7 +19,10 @@ rofi_command="rofi -theme powermenu"
 options=" lock
  logout
  reboot
- poweroff" 
+ poweroff
+ suspend
+ hibernate
+" 
 
 # ... because the essential options (-dmenu and -p) are added here
 selection=$(echo "$options" | $rofi_command -dmenu -p "")
@@ -33,4 +36,8 @@ case "${selection}" in
     $reboot_command;;
     " poweroff")
     $poweroff_command;;
+    " suspend")
+    $suspend_command;;
+    " hibernate")
+    $hibernate_command;;
 esac

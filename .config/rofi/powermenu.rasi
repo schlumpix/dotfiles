@@ -42,7 +42,7 @@ configuration {
 
 #window {
     width: 200;
-    height: 95;
+    height: 135;
     text-color: @foreground;
     orientation: vertical;
     border: 0px;
