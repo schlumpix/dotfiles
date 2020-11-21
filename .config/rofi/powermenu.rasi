@@ -8,22 +8,22 @@ configuration {
 }
 
 * {
-    text-color:                  #939393;
-    background-color:            argb:d9eeeeee;
-    lightbg:                     argb:d9eeeeee;
+    text-color:                  #eeeeee;
+    background-color:            argb:d9202020;
+    lightbg:                     argb:d9202020;
     red:                         #f15d22;
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #202020;
-    normal-foreground:           @foreground;
+    selected-normal-foreground:  #eeeeee;
+    normal-foreground:           #939393;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;
     urgent-foreground:           @foreground;
     alternate-urgent-background: @background-color;
     active-foreground:           @foreground;
     selected-active-foreground:  @foreground;
-    alternate-normal-foreground: @foreground;
+    alternate-normal-foreground: #939393;
     alternate-active-background: @blue;
     bordercolor:                 @foreground;
     normal-background:           @background-color;
@@ -41,13 +41,13 @@ configuration {
 }
 
 #window {
-    width: 200;
-    height: 135;
+    fullscreen: true;
+    padding: 38% 38%;
     text-color: @foreground;
     orientation: vertical;
     border: 0px;
     children: [mainbox];
-    background-color:            argb:d9eeeeee;
+    background-color:            argb:d9202020;
 }
 
 #dummy {
@@ -58,8 +58,7 @@ configuration {
 }
 
 #mainbox {
-    width: 200px;
-    padding: 5px;
+    width: 50px;
     margin: 0px;
     border: 0px;
     expand: false;

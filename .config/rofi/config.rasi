@@ -9,14 +9,14 @@ configuration {
 }
 
 * {
-    text-color:                  #202020;
-    background-color:            argb:d9eeeeee;
-    lightbg:                     argb:d9eeeeee;
+    text-color:                  #eeeeee;
+    background-color:            argb:d9202020;
+    lightbg:                     argb:d9202020;
     red:                         #f15d22;
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #202020;
+    selected-normal-foreground:  #eeeeee;
     normal-foreground:           #939393;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;
@@ -43,13 +43,13 @@ configuration {
 }
 
 #window {
-    width: 300;
-    height: 220;
+    fullscreen: true;
+    padding: 35% 35%;
     text-color: @foreground;
     orientation: vertical;
     border: 0px;
     children: [mainbox];
-    background-color:            argb:d9eeeeee;
+    background-color:            argb:d9202020;
 }
 
 #dummy {
