@@ -38,3 +38,5 @@ set softtabstop=4
 "Makes tabs and spaces visible
 "set list
 "set listchars=tab:>-,space:.
+"do not pretent to be vi
+set nocompatible
