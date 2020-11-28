@@ -40,3 +40,6 @@ set softtabstop=4
 "set listchars=tab:>-,space:.
 "do not pretent to be vi
 set nocompatible
+"set clipboard to behave like in any other editor
+set clipboard=unnamed
+
