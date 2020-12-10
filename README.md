@@ -13,8 +13,9 @@ You are better off reading the individual dot files and copy the bits that inter
 - Front Aweseome cheat sheet: https://fontawesome.com/cheatsheet?from=io  
 
 ### Themes:  
-- Windows 10 Theme https://github.com/B00merang-Project/Windows-10
-- Wallpaper: https://wallhaven.cc/w/96w8e8  
+- Orchis light theme: https://github.com/vinceliuice/Orchis-theme
+- Icons: Papirus icon theme: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+- Wallpaper: https://wallhaven.cc/w/lm8d8p  
 
 ### Documentation:  
 - i3wm documentation: https://i3wm.org/
