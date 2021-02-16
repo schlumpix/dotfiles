@@ -179,7 +179,6 @@ assign [class="battle.net.exe"] $ws6
 assign [class="game.exe"] $ws6
 assign [class="MTGA.exe"] $ws6
 assign [class="Steam"] $ws6
-assign [class="CrossCode"] $ws6
 assign [class="Gimp"] $ws3
 assign [class="TelegramDesktop"] $ws7
 assign [class="SciTE"] $ws3
@@ -190,6 +189,7 @@ assign [class="steam"] $ws6
 # workspace assignment workaround for LibreOffice
 for_window [class="^libreoffice-writer$"] move container to workspace $ws3
 for_window [class="^libreoffice-calc$"] move container to workspace $ws3
+for_window [class="CrossCode"] move container to workspace $ws6
 
 # assign windows tostart in floating mode
 for_window [class="Lxappearance"] floating enable border normal
@@ -205,11 +205,11 @@ for_window [class="discord"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="CrossCode"] floating enable
 for_window [class="SciTE"] floating enable
-
+for_window [class="Xfce4-power-manager-settings"] floating enable
 
 # visualization
 # disable titlebars and set border width
-new_window pixel 3
+new_window pixel 2
 
 # set gaps
 gaps inner 15
@@ -263,3 +263,6 @@ exec_always --no-startup-id xfce4-power-manager
 # keyboard layout (allow switching using left alt + left shift)
 #exec --no-startup-id "setxkbmap -layout us,de -variant altgr-intl,nodeadkeys -option nodeadkeys, -option 'grp:alt_shift_toggle'"
 exec_always --no-startup-id "setxkbmap -layout us,ch -variant altgr-intl, -option nodeadkeys, -option 'grp:alt_shift_toggle'"
+
+# disable mouse acceleration (default: xset m 2/1 4)
+exec_always --no-startup-id xset m 1/1 0
