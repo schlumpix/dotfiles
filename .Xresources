@@ -16,7 +16,7 @@ URxvt.transparent: false
 !URxvt.background: rgba:2000/2000/2000/cccc
 !
 !URxvt.background: #262a35
-!URxvt.background: #e5e5e5
+URxvt.background: #e5e5e5
 !URxvt.foreground: #202020
 
 URxvt.secondaryScroll: true
