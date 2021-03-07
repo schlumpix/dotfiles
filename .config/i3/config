@@ -206,6 +206,10 @@ for_window [class="Skype"] floating enable
 for_window [class="CrossCode"] floating enable
 for_window [class="SciTE"] floating enable
 for_window [class="Xfce4-power-manager-settings"] floating enable
+for_window [class="Arandr"] floating enable
+
+# aplication shortcuts
+bindsym $mod+e exec pcmanfm; exec --no-startup-id i3-msg "workspace $ws4"
 
 # visualization
 # disable titlebars and set border width
@@ -253,7 +257,7 @@ bar {
 
 # autostart
 # applications
-exec_always --no-startup-id pasystray --notify=all --no-icon-tooltip
+exec --no-startup-id pasystray --notify=all --no-icon-tooltip
 exec_always --no-startup-id nm-applet
 exec --no-startup-id picom -b --config ~/.picom.conf --experimental-backends
 exec_always --no-startup-id dunst
