@@ -264,6 +264,9 @@ exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id xfce4-power-manager
 
+# Polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # keyboard layout (allow switching using left alt + left shift)
 #exec --no-startup-id "setxkbmap -layout us,de -variant altgr-intl,nodeadkeys -option nodeadkeys, -option 'grp:alt_shift_toggle'"
 exec_always --no-startup-id "setxkbmap -layout us,ch -variant altgr-intl, -option nodeadkeys, -option 'grp:alt_shift_toggle'"
