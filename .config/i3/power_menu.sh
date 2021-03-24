@@ -21,8 +21,7 @@ options=" lock
  reboot
  poweroff
  suspend
- hibernate
-" 
+ hibernate"
 
 # ... because the essential options (-dmenu and -p) are added here
 selection=$(echo "$options" | $rofi_command -dmenu -p "")
