@@ -9,14 +9,14 @@ configuration {
 }
 
 * {
-    text-color:                  #eeeeee;
+    text-color:                  #202020;
     background-color:            argb:d9202020;
     lightbg:                     argb:d9202020;
     red:                         #f15d22;
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
-    selected-normal-foreground:  #eeeeee;
+    selected-normal-foreground:  #202020;
     normal-foreground:           #939393;
     alternate-normal-background: @background-color;
     selected-urgent-foreground:  @foreground;
@@ -63,8 +63,10 @@ configuration {
     width: 400px;
     padding: 5px;
     margin: 0px;
-    border: 0px;
+    border: 2px;
     expand: false;
+    background-color:           argb:d9eeeeee;
+    border-color:               argb:d90087af;
 }
 
 #message {
@@ -135,6 +137,6 @@ configuration {
 #textbox-prompt-colon {
     expand:     false;
     str:        ":";
-    text-color: @normal-foreground;
+    text-color: @selected-normal-foreground;
     background-color:            rgba ( 0, 0, 0, 0 % );
 }
