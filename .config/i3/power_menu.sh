@@ -10,7 +10,7 @@ reboot_command="systemctl reboot"
 logout_command="i3-msg exit"
 hibernate_command="systemctl hibernate"
 suspend_command="systemctl suspend"
-lock_command="betterlockscreen -l dimblur"
+lock_command="light-locker-command -l"
 
 # you can customise the rofi command all you want ...
 rofi_command="rofi -theme powermenu"
