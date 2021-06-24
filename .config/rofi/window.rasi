@@ -1,7 +1,7 @@
 configuration {
     sidebar-mode: true;
-    modi: "run";
-    display-run: "";
+    modi: "window";
+    display-window: "";
     show-icons: false;
     font: "System San Francisco Display 11";
     location: 0;
@@ -135,7 +135,7 @@ configuration {
 }
 #textbox-prompt-colon {
     expand:     false;
-    str:        "-> ";
+    str:        "window:";
     text-color: @selected-normal-foreground;
     background-color:            rgba ( 0, 0, 0, 0 % );
 }
