@@ -131,16 +131,16 @@ bindsym $mod+r mode "resize"
 
 # workspaces
 # worspace definitions
-set $ws1  "1 "
+set $ws1  "1 "
 set $ws2  "2 "
 set $ws3  "3 "
 set $ws4  "4 "
-set $ws5  "5 "
+set $ws5  "5 "
 set $ws6  "6 "
-set $ws7  "7 "
+set $ws7  "7 "
 set $ws8  "8 "
-set $ws9  "9 "
-set $ws10 "10 "
+set $ws9  "9 "
+set $ws10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -167,38 +167,56 @@ bindsym $mod+shift+9 move container to workspace $ws9
 bindsym $mod+shift+0 move container to workspace $ws10
 
 # assign applications to specific workspaces
-assign [class="^URxvt$"] $ws2
-assign [class="^firefox$"] $ws8
+# 1.Main (browser)
 assign [class="^Vivaldi-stable$"] $ws1
-assign [class="^vlc$"] $ws5
-assign [class="^Pcmanfm$"] $ws4
-assign [class="MPlayer"] $ws5
-assign [class="mpv"] $ws5
-assign [class="Erlang"] $ws9
-assign [class="cura"] $ws9
-assign [class="Code"] $ws3
-assign [class="FreeCAD"] $ws9
-assign [class="JDownloader"] $ws6
-assign [class="Wine"] $ws6
-assign [class="battle.net.exe"] $ws6
-assign [class="game.exe"] $ws6
-assign [class="MTGA.exe"] $ws6
-assign [class="Steam"] $ws6
-assign [class="Gimp"] $ws3
-assign [class="TelegramDesktop"] $ws7
-assign [class="SciTE"] $ws3
-assign [class="discord"] $ws7
-assign [class="Skype"] $ws7
-assign [class="steam"] $ws6
 
+# 2.Terminal
+assign [class="^URxvt$"] $ws2
+
+# 3.Text editors
+assign [class="Code"] $ws3
+assign [class="SciTE"] $ws3
 # workspace assignment workaround for LibreOffice
 for_window [class="^libreoffice-writer$"] move container to workspace $ws3
 for_window [class="^libreoffice-calc$"] move container to workspace $ws3
+
+# 4.Files
+assign [class="^Pcmanfm$"] $ws4
+
+# 5.Photo & Video
+assign [class="mpv"] $ws5
+assign [class="^vlc$"] $ws5
+assign [class="Gimp"] $ws5
+assign [class="Inkscape"] $ws5
+
+# 6.Gaming
+assign [class="Wine"] $ws6
+assign [class="battle.net.exe"] $ws6
+assign [class="game.exe"] $ws6
+assign [class="Steam"] $ws6
+assign [class="steam"] $ws6
+assign [class="retroarch"] $ws6
+# workspace assignment workaround for CrossCode
 for_window [class="CrossCode"] move container to workspace $ws6
+
+# 7.Chat
+assign [class="TelegramDesktop"] $ws7
+assign [class="discord"] $ws7
+assign [class="Skype"] $ws7
+
+# 8.Alternate browser
+assign [class="^firefox$"] $ws8
+
+# 9.Downloads
+assign [title="JDownloader 2"] $ws9
+
+# 10.Misc
+assign [class="Erlang"] $ws10
+assign [class="cura"] $ws10
+assign [class="FreeCAD"] $ws10
 
 # assign windows tostart in floating mode
 for_window [class="Lxappearance"] floating enable border normal
-for_window [class="Mirage"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Viewnior"] floating enable
@@ -225,7 +243,7 @@ gaps outer 5
 #smart_gaps on
 
 # special settings
-#firefox no border 
+# firefox no border 
 for_window [class="^firefox$"] border none 
 
 # aplication shortcuts
