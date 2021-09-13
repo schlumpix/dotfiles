@@ -15,7 +15,7 @@ You are better off reading the individual dot files and copy the bits that inter
 ### Themes:  
 - Orchis light theme: https://github.com/vinceliuice/Orchis-theme
 - Icons: Papirus icon theme: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-- Wallpaper: https://wallhere.com/en/wallpaper/1751359 
+- Wallpaper: https://i.imgur.com/fLtWTzP.jpeg 
 
 ### Documentation:  
 - i3wm documentation: https://i3wm.org/
