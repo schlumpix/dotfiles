@@ -3,7 +3,8 @@ configuration {
     modi: "window";
     display-window: "";
     show-icons: false;
-    font: "System San Francisco Display 11";
+    /*font: "System San Francisco Display 12";*/
+    font: "Iosevka 12";
     location: 0;
 }
 
@@ -60,12 +61,17 @@ configuration {
 
 #mainbox {
     width: 400px;
-    padding: 5px;
+    padding: 10px;
     margin: 0px;
     border: 2px;
     expand: false;
     background-color:           argb:d9eeeeee;
     border-color:               argb:d90087af;
+    children: [ inputbar, listview ];
+}
+
+#mode-switcher {
+    enabled: false;
 }
 
 #message {
@@ -77,6 +83,7 @@ configuration {
 }
 
 #listview {
+    padding: 10px 0px 0px 0px;
 }
 
 #element {
@@ -116,26 +123,28 @@ configuration {
     text-color: @alternate-active-foreground;
 }
 
-#sidebar {
-}
-
-#button selected {
-    text-color: @selected-normal-foreground;
-}
-#inputbar {
-    text-color: @selected-normal-foreground;
-}
-
-#button normal {
-    text-color: @foreground;
+#element-text {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator];
+    text-color: @selected-normal-foreground;
+    border: 0px 0px 2px 0px;
+    border-color: argb:d90087af;
+    children:   [ textbox-prompt-colon,entry,case-indicator];
 }
+
 #textbox-prompt-colon {
     expand:     false;
-    str:        "window:";
+    str:        " ";
     text-color: @selected-normal-foreground;
-    background-color:            rgba ( 0, 0, 0, 0 % );
+    background-color: rgba ( 0, 0, 0, 0 % );
+    font: "Sauce Code Pro Nerd Font Mono 12";
 }
+
+#entry {
+    placeholder: "Type here to search";
+    text-color: @selected-normal-foreground;
+}
+

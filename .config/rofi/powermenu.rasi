@@ -3,12 +3,14 @@ configuration {
     sidebar-mode: true;
     modi: "run";
     show-icons: false;
-    font: "System San Francisco Display 12, Font Awesome 5 Free Regular 12, Font Awesome 5 Free Solid 12";
+    /*font: "System San Francisco Display 12, Font Awesome 5 Free Regular 12, Font Awesome 5 Free Solid 12";*/
+    font: "Iosevka 16, Iosevka Nerd Font 16";
     location: 0;
 }
 
 * {
-    lines:                       6;
+    lines:                       1;
+    columns:                     6;  
     text-color:                  #202020;
     background-color:            argb:d9202020;
     lightbg:                     argb:d9202020;
@@ -43,19 +45,12 @@ configuration {
 
 #window {
     fullscreen: true;
-    padding: 38% 38%;
+    padding: 40%;
     text-color: @foreground;
     orientation: vertical;
     border: 0px;
     children: [mainbox];
     background-color:            argb:d9202020;
-}
-
-#dummy {
-    expand: true;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
 }
 
 #mainbox {
@@ -67,20 +62,22 @@ configuration {
     border-color:               argb:d90087af;
 }
 
-#message {
-    border: 0px;
-}
+ #message {                                                                      
+     border: 0px;                                                                
+ } 
 
 #textbox {
     text-color: @foreground;
 }
 
 #listview {
+    padding: 15px -15px 15px 20px;
 }
 
 #element {
-    border: 0;
+    border: 0px;
 }
+
 #element.normal.normal {
     text-color: @normal-foreground;
 }
@@ -115,26 +112,19 @@ configuration {
     text-color: @alternate-active-foreground;
 }
 
-#sidebar {
-}
-
 #button selected {
     text-color: @selected-normal-foreground;
 }
-#inputbar {
-    text-color: @selected-normal-foreground;
-}
 
-#button normal {
-    text-color: @foreground;
+#element-text {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #inputbar {
-    children:   [];
-}
-#textbox-prompt-colon {
-    expand:     false;
-    str:        ":";
     text-color: @normal-foreground;
-    background-color:            rgba ( 0, 0, 0, 0 % );
+    children: [];
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
 }
