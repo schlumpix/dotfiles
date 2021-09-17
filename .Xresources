@@ -22,7 +22,7 @@ URxvt.background: #e5e5e5
 URxvt.secondaryScroll: true
 URxvt.font: xft:Iosevka:size=11:hinting=true:antialias:true, xft:Iosevka Nerd Font Mono:size=11
 !URxvt.font: xft:DejaVu Sans Mono:pixelsize=12:hinting=true
-URxvt.geometry: 100x28
+URxvt.geometry: 110x28
 
 !Coloring
 ! special
