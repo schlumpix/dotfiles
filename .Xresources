@@ -47,7 +47,8 @@ URxvt.geometry: 110x28
 *.color11:      #7800af
 
 ! blue
-*.color4:       #0087af
+!*.color4:       #0087af
+*.color4:       #007da7
 *.color12:      #0098c5
 
 ! magenta

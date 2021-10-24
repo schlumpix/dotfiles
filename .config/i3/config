@@ -268,8 +268,10 @@ bindsym $mod+F7 exec arandr
 # colors
 # definitions
 set $darkWhite            #e5e5e5
-set $accentBlue           #0087af
-set $textActiveColor      #202020
+#set $accentBlue           #0087af
+#set $accentBlue           #1e9cc8
+set $accentBlue           #0098c5
+set $textColor      #202020
 set $textInactiveColor    #939393
 set $accentGray           #939393
 set $urgentColor          #e53935
@@ -280,10 +282,10 @@ set $urgentTextColor      #e53935
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $accentBlue         $accentBlue        $textActiveColor     $accentBlue
+client.focused          $accentBlue         $accentBlue        $textColor           $accentBlue
 client.unfocused        $accentGray         $accentGray        $textInactiveColor   $accentGray
 client.focused_inactive $accentGray         $accentGray        $textInactiveColor   $accentGray
-client.urgent           $urgentColor        $urgentColor       $textActiveColor     $accentBlue
+client.urgent           $urgentColor        $urgentColor       $textColor           $accentBlue
 
 # i3bar 
 bar {
@@ -296,7 +298,7 @@ bar {
 		background $darkWhite
 	   	separator $testActiveColor
 		#                  border             background         text
-		focused_workspace  $darkWhite         $darkWhite         $textActiveColor
+		focused_workspace  $darkWhite         $darkWhite         $textColor
 		inactive_workspace $darkWhite         $darkWhite         $textInactiveColor
 		urgent_workspace   $darkWhite         $darkWhite         $urgentTextColor
     }
