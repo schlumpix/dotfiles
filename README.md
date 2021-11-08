@@ -13,7 +13,7 @@ You are better off reading the individual dot files and copy the bits that inter
 - Front Aweseome cheat sheet: https://fontawesome.com/cheatsheet?from=io  
 
 ### Themes:  
-- Orchis light theme: https://github.com/vinceliuice/Orchis-theme
+- Vimix GTK Theme (Light Theme): https://github.com/vinceliuice/vimix-gtk-themes
 - Icons: Papirus icon theme: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 - Wallpaper: https://i.imgur.com/fLtWTzP.jpeg 
 
