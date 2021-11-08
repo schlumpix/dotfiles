@@ -186,7 +186,6 @@ for_window [class="^libreoffice-calc$"] move container to workspace $ws3
 
 # 4.Files
 assign [class="^Pcmanfm$"] $ws4
-assign [class="^Thunar$"] $ws4
 
 # 5.Photo & Video
 assign [class="mpv"] $ws5
@@ -226,6 +225,7 @@ for_window [class="Lxappearance"] floating enable border normal
 for_window [class="feh"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Viewnior"] floating enable
+#for_window [class="Sxiv"] floating enable
 for_window [class="Pcmanfm"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="TelegramDesktop"] floating enable
@@ -237,7 +237,6 @@ for_window [class="SciTE"] floating enable
 for_window [class="Xfce4-power-manager-settings"] floating enable
 for_window [class="Arandr"] floating enable
 for_window [class="Pychess"] floating enable
-for_window [class="Thunar"] floating enable
 for_window [class="Gnome-network-displays"] floating enable
 for_window [class="Gcolor3"] floating enable
 
@@ -259,8 +258,7 @@ gaps outer 5
 
 # aplication shortcuts
 # file manager
-#bindsym $mod+e exec pcmanfm; exec --no-startup-id i3-msg "workspace $ws4 "
-bindsym $mod+e exec Thunar; exec --no-startup-id i3-msg "workspace $ws4 "
+bindsym $mod+e exec pcmanfm; exec --no-startup-id i3-msg "workspace $ws4 "
 
 # arandr
 bindsym $mod+F7 exec arandr
