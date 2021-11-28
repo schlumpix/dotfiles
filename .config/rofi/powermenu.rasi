@@ -1,5 +1,4 @@
 configuration {
-    theme: "powermenu";
     sidebar-mode: true;
     modi: "run";
     show-icons: false;
