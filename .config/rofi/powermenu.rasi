@@ -59,6 +59,7 @@ configuration {
     expand: false;
     background-color:           argb:d9eeeeee;
     border-color:               argb:d90087af;
+    children: [listview];
 }
 
  #message {                                                                      
