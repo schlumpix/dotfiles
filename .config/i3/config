@@ -193,6 +193,7 @@ assign [class="mpv"] $ws5
 assign [class="^vlc$"] $ws5
 assign [class="Gimp"] $ws5
 assign [class="Inkscape"] $ws5
+assign [class="Audacity"] $ws5
 
 # 6.Gaming
 assign [class="Wine"] $ws6
@@ -205,10 +206,11 @@ assign [class="Pychess"] $ws6
 # workspace assignment workaround for CrossCode
 for_window [class="CrossCode"] move container to workspace $ws6
 
-# 7.Chat
+# 7.Chat etc.
 assign [class="TelegramDesktop"] $ws7
 assign [class="discord"] $ws7
 assign [class="Skype"] $ws7
+assign [class="Evolution"] $ws7
 
 # 8.Alternate browser
 assign [class="^firefox$"] $ws8
@@ -240,6 +242,7 @@ for_window [class="Arandr"] floating enable
 for_window [class="Pychess"] floating enable
 for_window [class="Gnome-network-displays"] floating enable
 for_window [class="Gcolor3"] floating enable
+for_window [class="Evolution-alarm-notify"] floating enable
 
 
 # visualization
@@ -267,10 +270,9 @@ bindsym $mod+F7 exec arandr
 # colors
 # definitions
 set $darkWhite            #e5e5e5
-#set $accentBlue           #0087af
-#set $accentBlue           #1e9cc8
-set $accentBlue           #0098c5
-set $textColor      #202020
+set $accentBlue           #007da7
+set $accentBlack          #2c2c2c
+set $textColor            #202020
 set $textInactiveColor    #939393
 set $accentGray           #939393
 set $urgentColor          #e53935
