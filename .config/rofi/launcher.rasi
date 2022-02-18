@@ -16,6 +16,8 @@ configuration {
     orange:                      #faa41a; 
     blue:                        #48b9c7; 
 
+    accentColor:                 argb:d9007da7;
+
     selected-normal-foreground:  #202020;
     normal-foreground:           #939393;
     alternate-normal-background: @background-color;
@@ -66,7 +68,8 @@ configuration {
     border: 2px;
     expand: false;
     background-color:       argb:d9eeeeee;
-    border-color:           argb:d90087af;
+   /* border-color:           argb:d90087af;*/
+    border-color:           @accentColor;
     children: [ inputbar, listview ];
 }
 
@@ -133,7 +136,8 @@ configuration {
 
 #inputbar {
     border: 0px 0px 2px 0px;
-    border-color: argb:d90087af;
+   /* border-color: argb:d90087af;*/
+    border-color: @accentColor;
     children:   [ textbox-prompt-colon,entry,case-indicator];
 }
 
