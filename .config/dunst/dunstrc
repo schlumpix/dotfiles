@@ -17,20 +17,28 @@
     # will be ignored.
     follow = mouse
 
-    # The geometry of the window:
-    #   [{width}]x{height}[+/-{x}+/-{y}]
-    # The geometry of the message window.
-    # The height is measured in number of notifications everything else
-    # in pixels.  If the width is omitted but the height is given
-    # ("-geometry x2"), the message window expands over the whole screen
-    # (dmenu-like).  If width is 0, the window expands to the longest
-    # message displayed.  A positive x is measured from the left, a
-    # negative from the right side of the screen.  Y is measured from
-    # the top and down respectively.
-    # The width can be negative.  In this case the actual width is the
-    # screen width minus the width defined in within the geometry option.
-    #geometry = "250x5-19+44"
-    geometry = "0x5-5+30"
+    ### Geometry ###
+
+    # dynamic width from 0 to 300
+    # width = (0, 300)
+    # constant width of 300
+    width = 300
+
+    # The maximum height of a single notification, excluding the frame.
+    #height = 300
+    height = 250
+
+    # Position the notification in the top right corner
+    origin = top-right
+
+    # Offset from the origin
+    offset = 19x44
+
+    # Scale factor. It is auto-detected if value is 0.
+    scale = 0
+
+    # Maximum number of notification (0 means no limit)
+    notification_limit = 5
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -42,12 +50,12 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 15
+    transparency = 0
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
     # to the font height and padding.
-    notification_height = 0
+    #notification_height = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -161,14 +169,15 @@
     ### Icons ###
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 32
 
     # Paths to default icons.
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_path = /usr/share/icons/Papirus-Light/
+    #icon_path = /usr/share/icons/Fluent-grey/16/status:/usr/share/icons/Fluent-grey/16/devices/
+    icon_path = /usr/share/icons/Fluent-grey/22/status:/usr/share/icons/Fluent-grey/22/devices/:/usr/share/icons/Fluent-grey/22/panel/
     ### History ###
 
     # Should a notification popped up from history be sticky or timeout
@@ -198,7 +207,7 @@
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
     # automatically after a crash.
-    startup_notification = false
+    #startup_notification = false
 
     ### Legacy
 
@@ -250,7 +259,7 @@
     #background = "#222222"
     #foreground = "#888888"
     #background = "#262a35"
-    background = "#e5e5e5"
+    background = "#f5f5f5"
     foreground = "#202020"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
@@ -258,7 +267,7 @@
 
 [urgency_normal]
     #background = "#262a35"
-    background = "#e5e5e5"
+    background = "#f5f5f5"
     foreground = "#202020"
     timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
@@ -266,7 +275,7 @@
 
 [urgency_critical]
     #background = "#262a35"
-    background = "#e5e5e5"
+    background = "#f5f5f5"
     foreground = "#af0000"
     frame_color = "#af0000"
     timeout = 0
